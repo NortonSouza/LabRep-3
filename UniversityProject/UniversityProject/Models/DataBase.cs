@@ -9,6 +9,7 @@ namespace UniversityProject.Models
 {
     public class DataBase : DbContext
     {
+        public DbSet<User> Users { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Partner> Partner { get; set; }
         public string connectionString { get; set; } = @"Data Source=.\SQLExpress;Database=UniversityProjectLab;integrated Security=true"; 

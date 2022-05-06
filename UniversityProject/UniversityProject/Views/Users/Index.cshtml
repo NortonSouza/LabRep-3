@@ -37,32 +37,18 @@
 <table class="table">
   <thead>
     <tr>
-      <th>
-        @Html.DisplayNameFor(model => model.IdStudent)
-      </th>
-      <th>
-        @Html.DisplayNameFor(model => model.IdAdmin)
-      </th>
+   
       <th>
         @Html.DisplayNameFor(model => model.Nome)
       </th>
-      <th>
-        @Html.DisplayNameFor(model => model.Cpf)
-      </th>
-      <th>
-        @Html.DisplayNameFor(model => model.Telefone)
-      </th>
+
       <th>
         @Html.DisplayNameFor(model => model.Email)
       </th>
       <th>
-        @Html.DisplayNameFor(model => model.NivelAcesso)
-      </th>
+
       <th>
-        @Html.DisplayNameFor(model => model.CodigoAcesso)
-      </th>
-      <th>
-        @Html.DisplayNameFor(model => model.TipoUsuario)
+        @*@Html.DisplayNameFor(model => model.TipoUsuario)*@
       </th>
       <th>
         @Html.DisplayNameFor(model => model.Senha)
@@ -74,32 +60,17 @@
     @foreach (var item in Model)
     {
       <tr>
-        <td>
-          @Html.DisplayFor(modelItem => item.IdStudent)
-        </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.IdAdmin)
-        </td>
+
         <td>
           @Html.DisplayFor(modelItem => item.Nome)
         </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.Cpf)
-        </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.Telefone)
-        </td>
+
         <td>
           @Html.DisplayFor(modelItem => item.Email)
         </td>
+
         <td>
-          @Html.DisplayFor(modelItem => item.NivelAcesso)
-        </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.CodigoAcesso)
-        </td>
-        <td>
-          @Html.DisplayFor(modelItem => item.TipoUsuario)
+          @*@Html.DisplayFor(modelItem => item.TipoUsuario)*@
         </td>
         <td>
           @Html.DisplayFor(modelItem => item.Senha)

@@ -52,7 +52,7 @@ namespace UniversityProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdStudent,IdAdmin,Nome,Cpf,Telefone,Email,NivelAcesso,CodigoAcesso,TipoUsuario,Senha")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -84,7 +84,7 @@ namespace UniversityProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,IdStudent,IdAdmin,Nome,Cpf,Telefone,Email,NivelAcesso,CodigoAcesso,TipoUsuario,Senha")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,TipoUsuario,Senha")] User user)
         {
             if (id != user.Id)
             {

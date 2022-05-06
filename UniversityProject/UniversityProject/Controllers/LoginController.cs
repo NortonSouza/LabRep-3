@@ -18,8 +18,8 @@ namespace UniversityProject.Controllers
         SqlConnection con = new SqlConnection();
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
-        private readonly int _tipoUsuarioAdministrador = 1;
-        private readonly int _tipoUsuarioAluno = 2;
+        private readonly int _typeStudent = 1;
+        private readonly int _typePartner = 2;
 
         public LoginController(DataBase context)
         {
@@ -54,7 +54,8 @@ namespace UniversityProject.Controllers
 
 
             //user = (User)_context.Users.Select(d => d.Email == user.Email && d.Senha == user.Senha);
-            if (user.TipoUsuario == _tipoUsuarioAdministrador)
+            //if (user.GetPermission() == _typeStudent)
+            if (1 == 1)
             {
                 if (dr.Read())
                 {
@@ -67,7 +68,8 @@ namespace UniversityProject.Controllers
                     return View("Error");
                 }
             }
-            else if(user.TipoUsuario == _tipoUsuarioAluno)
+            //else if(user.GetPermission() == _typePartner)
+            else if(1 == 1)
             {
                 if (dr.Read())
                 {

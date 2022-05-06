@@ -10,6 +10,9 @@ namespace UniversityProject.Models
 {
     public class Partner : LegalPersonUser
     {
-        public override int permission() => 2;
+        //public int GetPermission()
+        //{
+        //    return 2;
+        //}
     }
 }

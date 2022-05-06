@@ -10,6 +10,9 @@ namespace UniversityProject.Models
 {
     public class Student : NaturalPersonUser
     {
-        public override int permission() => 1;
+        //public int GetPermission()
+        //{
+        //    return 1;
+        //}
     }
 }

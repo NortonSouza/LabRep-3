@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace UniversityProject.Models
 {
-    public abstract class User
+    public class User
     {
         [Key]
         public int Id { get; set; }
@@ -16,18 +16,27 @@ namespace UniversityProject.Models
         [DisplayName("Nome")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Column(TypeName = "nvarchar(250)")]
-        public string nome { get; set; }
+        public string Nome { get; set; }
 
         [DisplayName("Email")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Column(TypeName = "varchar(100)")]
-        public string email { get; set; }
+        public string Email { get; set; }
 
         [DisplayName("Senha")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Column(TypeName = "varchar(150)")]
-        public string senha { get; set; }
+        public string Senha { get; set; }
 
-        public static int permission() => 0;
+
+        //[DisplayName("TipoUsuario")]
+        //[Required(ErrorMessage = "Este campo é obrigatório")]
+        //[Column(TypeName = "INT")]
+        //public int TipoUsuario { get; set; }
+
+        //public int GetPermission()
+        //{
+        //    return 0;
+        //}
     }
 }
