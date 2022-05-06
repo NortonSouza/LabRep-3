@@ -16,17 +16,17 @@ namespace UniversityProject.Models
         [DisplayName("Nome")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Column(TypeName = "nvarchar(250)")]
-        public string Nome { get; set; }
+        public string nome { get; set; }
 
         [DisplayName("Email")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Column(TypeName = "varchar(100)")]
-        public string Email { get; set; }
+        public string email { get; set; }
 
         [DisplayName("Senha")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Column(TypeName = "varchar(150)")]
-        public string Senha { get; set; }
+        public string senha { get; set; }
 
         public static int permission() => 0;
     }

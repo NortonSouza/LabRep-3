@@ -13,6 +13,6 @@ namespace UniversityProject.Models
         [DisplayName("CPF")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [Column(TypeName = "varchar(14)")]
-        public string Cpf { get; set; }
+        public string cpf { get; set; }
     }
 }

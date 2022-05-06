@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace UniversityProject.Models
 {
-    public class Partner : LegalPersonUser
-    {
-        public override int permission() => 2;
+    public class LegalPersonUser : User
+    {   
+        [DisplayName("CNPJ")]
+        [Required(ErrorMessage = "Este campo é obrigatório")]
+        [Column(TypeName = "varchar(18)")]
+        public string cnpj { get; set; }
     }
 }
